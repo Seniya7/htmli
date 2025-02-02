@@ -3000,3 +3000,220 @@ footer {
         transform: translateY(0);
     }
 }
+
+/* Адаптивные стили для основного сайта */
+@media (max-width: 768px) {
+    /* Навигация */
+    .nav {
+        padding: 15px;
+    }
+
+    .nav-logo {
+        max-width: 120px;
+    }
+
+    .nav-links {
+        display: none; /* Можно добавить мобильное меню */
+    }
+
+    /* Основные секции */
+    .section {
+        padding: 40px 20px;
+    }
+
+    .section-title {
+        font-size: 1.8em;
+        margin-bottom: 20px;
+    }
+
+    .section-text {
+        font-size: 0.9em;
+        line-height: 1.6;
+    }
+
+    /* Карточки */
+    .feature-card {
+        width: 100%;
+        margin: 10px 0;
+        padding: 20px;
+    }
+
+    .card-title {
+        font-size: 1.4em;
+    }
+
+    .card-text {
+        font-size: 0.9em;
+    }
+
+    /* Статистика */
+    .stats-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .stat-item {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .stat-value {
+        font-size: 1.6em;
+    }
+
+    .stat-label {
+        font-size: 0.9em;
+    }
+
+    /* Кнопки */
+    .button-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .button {
+        width: 100%;
+        padding: 12px 20px;
+        font-size: 0.9em;
+    }
+
+    /* Сетка */
+    .grid-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Дополнительные стили для маленьких экранов */
+    .section {
+        padding: 30px 15px;
+    }
+
+    .section-title {
+        font-size: 1.6em;
+    }
+
+    .feature-card {
+        padding: 15px;
+    }
+
+    .card-title {
+        font-size: 1.2em;
+    }
+
+    .stat-item {
+        padding: 12px;
+    }
+
+    .stat-value {
+        font-size: 1.4em;
+    }
+
+    /* Улучшенные отступы */
+    .content-wrapper {
+        margin: 10px;
+    }
+
+    /* Оптимизация изображений */
+    .image-container img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Улучшенная типография */
+    body {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+}
+
+/* Улучшенная навигация для мобильных */
+.mobile-menu-btn {
+    display: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    .mobile-menu-btn {
+        display: block;
+    }
+
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 80%;
+        height: 100vh;
+        background: rgba(17, 17, 17, 0.95);
+        backdrop-filter: blur(10px);
+        padding: 20px;
+        transition: 0.3s;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-menu .nav-links {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-link {
+        font-size: 1.1em;
+        padding: 10px;
+    }
+}
+
+/* Улучшенные интерактивные элементы */
+@media (hover: none) {
+    .button:hover {
+        transform: none;
+        box-shadow: none;
+    }
+
+    .feature-card:hover {
+        transform: none;
+    }
+
+    .nav-link:hover {
+        background: none;
+    }
+}
+
+/* Оптимизация производительности анимаций */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* Улучшенная доступность */
+@media (max-width: 768px) {
+    .focus-visible {
+        outline: 2px solid #64ffda;
+        outline-offset: 2px;
+    }
+
+    input, button, a {
+        min-height: 44px;
+        min-width: 44px;
+    }
+}
