@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>TradePro</title>
+    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="content">
+        <header>
+            <div class="logo">
+                <img src="logo.svg" alt="TradePro Logo">
+                <span>TradePro</span>
+            </div>
+            <nav>
+                <a href="#home" data-translate="home">Home</a>
+                <a href="#features" data-translate="features">Features</a>
+                <a href="#about" data-translate="about">About</a>
+                <a href="#pricing" data-translate="pricing">Pricing</a>
+                
+                <div class="nav-buttons">
+                    <button class="login-btn" data-translate="login">Login</button>
+                    <button class="buy-plan-btn" data-translate="buyPlan">Buy Plan</button>
+                </div>
+                
+                <div class="language-dropdown">
+                    <button class="dropbtn">
+                        <span class="selected-lang">EN</span>
+                        <span class="arrow">▼</span>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#" data-lang="en"><span>🇬🇧</span> English</a>
+                        <a href="#" data-lang="ru"><span>🇷🇺</span> Русский</a>
+                        <a href="#" data-lang="ua"><span>🇺🇦</span> Українська</a>
+                    </div>
+                </div>
+                
+                <button class="mobile-menu-btn" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </nav>
+        </header>
+
+        <main>
+            <!-- Hero Section -->
+            <section class="hero" id="home">
+                <!-- Add hero background overlay for better text readability -->
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <h1>
+                        <span data-translate="nextGen">Next Generation</span>
+                        <span data-translate="tradingPlatform">Trading Platform</span>
+                    </h1>
+                    <p data-translate="advancedTools">Advanced tools for professional traders</p>
+                    <div class="hero-buttons">
+                        <button class="primary-btn" data-translate="startTrading">Start Trading</button>
+                        <button class="secondary-btn" data-translate="watchDemo">Watch Demo</button>
+                    </div>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <span class="stat-number">$2.4B+</span>
+                            <span class="stat-label" data-translate="tradingVolume">Trading Volume</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">150K+</span>
+                            <span class="stat-label" data-translate="activeTraders">Active Traders</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label" data-translate="countries">Countries</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Add scroll indicator -->
+                    <div class="scroll-indicator">
+                        <span data-translate="scrollDown">Scroll Down</span>
+                        <div class="scroll-arrow"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Features Section -->
+            <section class="features" id="features">
+                <!-- Add section background for contrast -->
+                <div class="section-background"></div>
+                <h2 data-translate="whyChooseUs">Why Choose TradePro</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">📊</div>
+                        <h3 data-translate="realTimeAnalytics">Real-time Analytics</h3>
+                        <p data-translate="analyticsDesc">Advanced market analysis tools with AI-powered insights</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🔒</div>
+                        <h3 data-translate="security">Bank-Grade Security</h3>
+                        <p data-translate="securityDesc">Your assets are protected with military-grade encryption</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <h3 data-translate="speed">Lightning Fast</h3>
+                        <p data-translate="speedDesc">Execute trades in milliseconds with our advanced infrastructure</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🤖</div>
+                        <h3 data-translate="automation">Smart Automation</h3>
+                        <p data-translate="automationDesc">Automate your trading strategies with ease</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Новая секция Features Showcase -->
+            <section class="features-showcase">
+                <div class="showcase-grid">
+                    <!-- Карточка 1 -->
+                    <div class="showcase-card">
+                        <span class="feature-badge">Popular</span>
+                        <div class="card-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Advanced Analytics</h3>
+                        <p>Real-time market analysis with AI-powered insights and predictions.</p>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 85%;"></div>
+                        </div>
+                        <div class="card-stats">
+                            <div class="stat-item">
+                                <div class="stat-value">85%</div>
+                                <div class="stat-label">Accuracy</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-value">24/7</div>
+                                <div class="stat-label">Monitoring</div>
+                            </div>
+                        </div>
+                        <div class="card-actions">
+                            <button class="card-btn primary-action">Try Now</button>
+                            <button class="card-btn secondary-action">Learn More</button>
+                        </div>
+                    </div>
+
+                    <!-- Карточка 2 -->
+                    <div class="showcase-card">
+                        <div class="card-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3>AI Trading Bots</h3>
+                        <p>Automated trading strategies with customizable parameters and risk management.</p>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 92%;"></div>
+                        </div>
+                        <div class="card-stats">
+                            <div class="stat-item">
+                                <div class="stat-value">92%</div>
+                                <div class="stat-label">Performance</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-value">500+</div>
+                                <div class="stat-label">Active Bots</div>
+                            </div>
+                        </div>
+                        <div class="card-actions">
+                            <button class="card-btn primary-action">Deploy Bot</button>
+                            <button class="card-btn secondary-action">Details</button>
+                        </div>
+                    </div>
+
+                    <!-- Карточка 3 -->
+                    <div class="showcase-card">
+                        <div class="card-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Security First</h3>
+                        <p>Enterprise-grade security with multi-factor authentication and encryption.</p>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 99%;"></div>
+                        </div>
+                        <div class="card-stats">
+                            <div class="stat-item">
+                                <div class="stat-value">99.9%</div>
+                                <div class="stat-label">Uptime</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-value">256bit</div>
+                                <div class="stat-label">Encryption</div>
+                            </div>
+                        </div>
+                        <div class="card-actions">
+                            <button class="card-btn primary-action">Secure Now</button>
+                            <button class="card-btn secondary-action">Learn More</button>
+                        </div>
+                    </div>
+
+                    <!-- Карточка 4 -->
+                    <div class="showcase-card">
+                        <div class="card-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>Trading Academy</h3>
+                        <p>Professional trading courses and real-time mentoring from experts.</p>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 88%;"></div>
+                        </div>
+                        <div class="card-stats">
+                            <div class="stat-item">
+                                <div class="stat-value">50+</div>
+                                <div class="stat-label">Courses</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-value">10K+</div>
+                                <div class="stat-label">Students</div>
+                            </div>
+                        </div>
+                        <div class="card-actions">
+                            <button class="card-btn primary-action">Start Learning</button>
+                            <button class="card-btn secondary-action">View Courses</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Добавляем секцию с графиком TradingView -->
+            <section class="tradingview-section">
+                <div class="tradingview-container">
+                    <div class="tradingview-widget-container">
+                        <div id="tradingview_chart"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Trading Tools Section -->
+            <section class="trading-tools">
+                <h2 data-translate="tradingTools">Professional Trading Tools</h2>
+                <div class="tools-showcase">
+                    <div class="tool-preview">
+                        <img src="chart-placeholder.png" alt="Trading Chart">
+                        <div class="tool-overlay">
+                            <h3 data-translate="advancedCharts">Advanced Charts</h3>
+                            <p data-translate="chartsDesc">Professional-grade technical analysis tools</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Добавьте после секции features и перед trading-tools -->
+            <section class="traders-section">
+                <h2 data-translate="topTraders">Top Traders</h2>
+                <div class="traders-filters">
+                    <select class="filter-period" data-translate="period">
+                        <option value="week">This Week</option>
+                        <option value="month">This Month</option>
+                        <option value="year">This Year</option>
+                    </select>
+                    <select class="filter-category" data-translate="category">
+                        <option value="all">All Categories</option>
+                        <option value="crypto">Crypto</option>
+                        <option value="forex">Forex</option>
+                        <option value="stocks">Stocks</option>
+                    </select>
+                </div>
+                <div class="traders-container">
+                    <div class="traders-header">
+                        <div class="traders-stats">
+                            <div class="stat">
+                                <span class="number">$2.8M+</span>
+                                <span class="label" data-translate="totalProfit">Total Profit</span>
+                            </div>
+                            <div class="stat">
+                                <span class="number">98%</span>
+                                <span class="label" data-translate="successRate">Success Rate</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="traders-list">
+                        <div class="trader-card">
+                            <div class="trader-rank">#1</div>
+                            <div class="trader-avatar">👨‍💼</div>
+                            <div class="trader-info">
+                                <h3>Alex Thompson</h3>
+                                <div class="profit-info">
+                                    <span class="profit positive">+$324,521</span>
+                                    <span class="profit-percent positive">+45.8%</span>
+                                </div>
+                                <div class="trade-stats">
+                                    <span>789 trades</span>
+                                    <span>99.2% success</span>
+                                </div>
+                            </div>
+                            <button class="follow-btn" data-translate="follow">Follow</button>
+                        </div>
+                        
+                        <div class="trader-card">
+                            <div class="trader-rank">#2</div>
+                            <div class="trader-avatar">👩‍💼</div>
+                            <div class="trader-info">
+                                <h3>Sarah Chen</h3>
+                                <div class="profit-info">
+                                    <span class="profit positive">+$287,954</span>
+                                    <span class="profit-percent positive">+42.3%</span>
+                                </div>
+                                <div class="trade-stats">
+                                    <span>654 trades</span>
+                                    <span>98.7% success</span>
+                                </div>
+                            </div>
+                            <button class="follow-btn" data-translate="follow">Follow</button>
+                        </div>
+
+                        <div class="trader-card">
+                            <div class="trader-rank">#3</div>
+                            <div class="trader-avatar">👨‍💼</div>
+                            <div class="trader-info">
+                                <h3>Michael Rodriguez</h3>
+                                <div class="profit-info">
+                                    <span class="profit positive">+$265,832</span>
+                                    <span class="profit-percent positive">+39.6%</span>
+                                </div>
+                                <div class="trade-stats">
+                                    <span>542 trades</span>
+                                    <span>98.1% success</span>
+                                </div>
+                            </div>
+                            <button class="follow-btn" data-translate="follow">Follow</button>
+                        </div>
+
+                        <div class="trader-card">
+                            <div class="trader-rank">#4</div>
+                            <div class="trader-avatar">👩‍💼</div>
+                            <div class="trader-info">
+                                <h3>Emma Watson</h3>
+                                <div class="profit-info">
+                                    <span class="profit positive">+$243,167</span>
+                                    <span class="profit-percent positive">+37.2%</span>
+                                </div>
+                                <div class="trade-stats">
+                                    <span>478 trades</span>
+                                    <span>97.8% success</span>
+                                </div>
+                            </div>
+                            <button class="follow-btn" data-translate="follow">Follow</button>
+                        </div>
+
+                        <div class="trader-card">
+                            <div class="trader-rank">#5</div>
+                            <div class="trader-avatar">👨‍💼</div>
+                            <div class="trader-info">
+                                <h3>David Kim</h3>
+                                <div class="profit-info">
+                                    <span class="profit positive">+$231,945</span>
+                                    <span class="profit-percent positive">+35.9%</span>
+                                </div>
+                                <div class="trade-stats">
+                                    <span>423 trades</span>
+                                    <span>97.5% success</span>
+                                </div>
+                            </div>
+                            <button class="follow-btn" data-translate="follow">Follow</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Add CTA section -->
+            <section class="cta-section">
+                <h2 data-translate="readyToStart">Ready to Start Trading?</h2>
+                <p data-translate="ctaDescription">Join thousands of successful traders on TradePro</p>
+                <button class="cta-button" data-translate="openAccount">Open Free Account</button>
+            </section>
+        </main>
+    </div>
+    
+    <canvas id="neuro"></canvas>
+    
+    <script type="x-shader/x-fragment" id="vertShader">
+        precision mediump float;
+    
+        varying vec2 vUv;
+        attribute vec2 a_position;
+    
+        void main() {
+            vUv = .5 * (a_position + 1.);
+            gl_Position = vec4(a_position, 0.0, 1.0);
+        }
+    </script>
+    
+    <script type="x-shader/x-fragment" id="fragShader">
+        precision mediump float;
+    
+        varying vec2 vUv;
+        uniform float u_time;
+        uniform float u_ratio;
+        uniform vec2 u_pointer_position;
+        uniform float u_scroll_progress;
+    
+        vec2 rotate(vec2 uv, float th) {
+            return mat2(cos(th), sin(th), -sin(th), cos(th)) * uv;
+        }
+    
+        float neuro_shape(vec2 uv, float t, float p) {
+            vec2 sine_acc = vec2(0.);
+            vec2 res = vec2(0.);
+            float scale = 8.;
+    
+            for (int j = 0; j < 15; j++) {
+                uv = rotate(uv, 1.);
+                sine_acc = rotate(sine_acc, 1.);
+                vec2 layer = uv * scale + float(j) + sine_acc - t;
+                sine_acc += sin(layer);
+                res += (.5 + .5 * cos(layer)) / scale;
+                scale *= (1.2 - .07 * p);
+            }
+            return res.x + res.y;
+        }
+    
+        void main() {
+            vec2 uv = .5 * vUv;
+            uv.x *= u_ratio;
+    
+            vec2 pointer = vUv - u_pointer_position;
+            pointer.x *= u_ratio;
+            float p = clamp(length(pointer), 0., 1.);
+            p = .5 * pow(1. - p, 2.);
+    
+            float t = .001 * u_time;
+            vec3 color = vec3(0.);
+    
+            float noise = neuro_shape(uv, t, p);
+    
+            noise = 1.2 * pow(noise, 3.);
+            noise += pow(noise, 10.);
+            noise = max(.0, noise - .5);
+            noise *= (1. - length(vUv - .5));
+    
+            color = normalize(vec3(.2, .5 + .4 * cos(3. * u_scroll_progress), .5 + .5 * sin(3. * u_scroll_progress)));
+    
+            color = color * noise;
+    
+            gl_FragColor = vec4(color, noise);
+        }
+    </script>
+
+    <script src="main.js"></script>
+
+    <!-- Add footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3 data-translate="company">Company</h3>
+                <a href="#about" data-translate="about">About Us</a>
+                <a href="#careers" data-translate="careers">Careers</a>
+                <a href="#contact" data-translate="contact">Contact</a>
+            </div>
+            <div class="footer-column">
+                <h3 data-translate="legal">Legal</h3>
+                <a href="#privacy" data-translate="privacy">Privacy Policy</a>
+                <a href="#terms" data-translate="terms">Terms of Service</a>
+            </div>
+            <div class="footer-column">
+                <h3 data-translate="social">Social</h3>
+                <div class="social-links">
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 TradePro. <span data-translate="rightsReserved">All rights reserved</span></p>
+        </div>
+    </footer>
+
+    <!-- Добавляем модальное окно после основного контента, но перед скриптами -->
+    <div class="modal" id="registerModal">
+        <div class="modal-content">
+            <button class="close-modal">&times;</button>
+            <div class="modal-header">
+                <h2 data-translate="registration">Registration</h2>
+            </div>
+            <div class="modal-body">
+                <form id="registerForm" class="register-form">
+                    <div class="form-group">
+                        <input type="email" id="email" required placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" id="password" required placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" id="confirmPassword" required placeholder="Confirm Password">
+                    </div>
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="terms" required>
+                        <label for="terms" data-translate="termsAgree">I agree to the Terms and Conditions</label>
+                    </div>
+                    <button type="submit" class="register-btn" data-translate="createAccount">Create Account</button>
+                    <div class="form-footer">
+                        <span data-translate="haveAccount">Already have an account?</span>
+                        <a href="#" class="login-link" data-translate="loginHere">Login here</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Добавляем модальное окно входа после модального окна регистрации -->
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <button class="close-modal">&times;</button>
+            <div class="modal-header">
+                <h2 data-translate="login">Login</h2>
+            </div>
+            <div class="modal-body">
+                <form id="loginForm" class="login-form">
+                    <div class="form-group">
+                        <input type="email" id="loginEmail" required placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" id="loginPassword" required placeholder="Password">
+                    </div>
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="rememberMe">
+                        <label for="rememberMe" data-translate="rememberMe">Remember me</label>
+                    </div>
+                    <button type="submit" class="login-submit-btn" data-translate="signIn">Sign In</button>
+                    <div class="form-footer">
+                        <a href="#" class="forgot-password" data-translate="forgotPassword">Forgot password?</a>
+                        <div class="register-prompt">
+                            <span data-translate="noAccount">Don't have an account?</span>
+                            <a href="#" class="register-link" data-translate="registerHere">Register here</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Добавьте перед закрывающим тегом body -->
+    <script src="script.js"></script>
+</body>
+</html>
